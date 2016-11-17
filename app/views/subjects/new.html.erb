@@ -1,0 +1,12 @@
+<h1> Add a new Subject </h1>
+
+<br />
+<div>
+  <%= simple_form_for @subject, url: subjects_path do |f| %>
+    <%= f.input :title %>
+    <br />
+    <%= f.submit "Create"%>
+    <br />
+  <% end %>
+  <br />
+</div>

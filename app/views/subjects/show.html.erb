@@ -1,0 +1,17 @@
+
+<div class= 'head col-xs-10 col-xs-offset-1 text-center'>
+  <h1> <%= @subject.title %> </h1>
+  <%= link_to 'Add a Topic', new_subject_topic_path(@subject), class: 'btn btn-default btn-lg' %>
+</div>
+
+<br class='clr' />
+<br  />
+<br  />
+<br  />
+<br  />
+
+<div class='col-xs-10 col-xs-offset-1 paper'>
+  <% @subject.topics.each do |topic| %>
+      <h4 class='col-xs-4 col-xs-offset-1 text-center topic'> <%= link_to topic.title, subject_topic_path(@subject, topic) %> </h4>
+  <% end %>
+</div>

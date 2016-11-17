@@ -1,0 +1,14 @@
+<h1> Add a new Note </h1>
+
+<br />
+<div>
+  <%= simple_form_for @note, url: subject_topic_notes_path(@subject, @topic) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :url %>
+    <%= f.input :information %>
+    <br />
+    <%= f.submit "Create"%>
+    <br />
+  <% end %>
+  <br />
+</div>

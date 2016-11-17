@@ -1,0 +1,116 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Permanent+Marker|Rock+Salt|Russo+One|VT323');
+
+.head h1{
+  font-size: 70px;
+  font-weight: bolder;
+  text-decoration: overline underline;
+}
+
+.head {
+  color: black;
+  border: 1px solid #484249;
+  box-sizing: padding-box;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: white;
+}
+
+.head p {
+  font-size: 40px;
+}
+
+// .btn-default{
+//   color: #3ad129;
+//   padding-top: 20px;
+//   padding-bottom: 20px;
+//   background-color: #2e0335;
+//   border: 1px solid #69636b;
+// }
+
+body {
+  background: url('black_denim.png');
+  margin-bottom:20px;
+}
+
+.clr {
+  clear: both;
+}
+
+.subject {
+  margin-top: 60px;
+  font-size: 30px;
+  font-family: 'Permanent Marker', cursive;
+  box-sizing: content-box;
+  background: url('post-it.png');
+  // border: 1px solid white;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  padding-right: 20px;
+  padding-left: 13px;
+  // width: 350px;
+
+}
+
+.subject a {
+  color: black;
+}
+
+.subject a:hover{
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.topic {
+  margin-top: 60px;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 30px;
+  border: 2px solid #d10606;
+  box-sizing: content-box;
+  border-radius: 150px;
+  height: 45px;
+  width: 150px;;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.topic a {
+  color: black;
+}
+
+.topic a:hover{
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.note {
+  color: #3ad129;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #2e0335;
+  border: 1px solid #69636b;
+  font-family: 'VT323', monospace;
+  box-sizing: content-box;
+}
+
+.paper {
+  background: url('linedpaper.png');
+  padding-bottom: 50px;
+}
