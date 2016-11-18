@@ -12,6 +12,8 @@
 
 <div class='col-xs-10 col-xs-offset-1 paper'>
   <% @subject.topics.each do |topic| %>
-      <h4 class='col-xs-4 col-xs-offset-1 text-center topic'> <%= link_to topic.title, subject_topic_path(@subject, topic) %> </h4>
+      <h4 class='col-xs-4 col-xs-offset-1 text-center topic'>
+        <%= link_to topic.title, subject_topic_path(@subject, topic) %>
+      </h4>
   <% end %>
 </div>

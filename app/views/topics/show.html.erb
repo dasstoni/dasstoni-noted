@@ -3,7 +3,8 @@
 
 <ul class='col-xs-10 col-xs-offset-1'>
 <% @topic.notes.each do |note| %>
-    <li class='note col-xs-4 col-xs-offset-1'> <%= note.title %>
+    <li class='note col-xs-4 col-xs-offset-1'>
+      <%= note.title %>
     <p> <%= link_to note.url, note.url %> </p>
     <p> <%= note.information %> </p> </li>
 <% end %>
