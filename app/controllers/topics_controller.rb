@@ -8,6 +8,7 @@ class TopicsController < ApplicationController
   def show
     @subject = Subject.find(params[:subject_id])
     @topic = Topic.find(params[:id])
+    @note = Note.new
   end
 
   def create

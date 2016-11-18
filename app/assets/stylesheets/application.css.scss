@@ -99,15 +99,26 @@ body {
 }
 
 .note {
-  color: #3ad129;
+  color: white;
+  font-size: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #2e0335;
   border: 1px solid #69636b;
   font-family: 'VT323', monospace;
   box-sizing: content-box;
+  margin-bottom: 20px;
 }
 
+.note a {
+  font-size: 18px;
+  color: #4a83e0;
+}
+
+.info {
+  font-size: 15px;
+  color: #3ad129;
+}
 .paper {
   background: url('linedpaper.png');
   padding-bottom: 50px;
